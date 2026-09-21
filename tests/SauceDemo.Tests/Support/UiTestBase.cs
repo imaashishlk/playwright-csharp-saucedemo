@@ -25,6 +25,7 @@ public abstract class UiTestBase : IAsyncLifetime
     public async ValueTask DisposeAsync()
     {
         var failed = TestContext.Current.TestState?.Result == TestResult.Failed;
+        // var failed = true;
 
         if (failed)
         {

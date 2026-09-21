@@ -28,4 +28,5 @@ public static class TestUsers
     public const string Standard = "standard_user";
     public const string LockedOut = "locked_out_user";
     public const string Password = "secret_sauce";
+    public const string Problem = "problem_user";
 }
