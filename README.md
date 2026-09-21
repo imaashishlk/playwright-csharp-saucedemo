@@ -12,6 +12,22 @@ written with C#, .NET 10, Playwright and xUnit. Tests run automatically in GitHu
 - **Failure screenshots**: a failed test saves a full-page screenshot, uploaded as a GitHub Actions artifact.
 - **CI**: every push builds the project, installs the browser and runs the tests.
 
+## Failure reporting in action
+
+When a test fails, GitHub Actions marks the run red and uploads a screenshot of the page as it looked at the moment of failure.
+
+**Failed run with the error annotation**
+
+![Failed CI run](docs/images/ci-failed-run.png)
+
+**Screenshot uploaded as a build artifact**
+
+![Artifacts section](docs/images/ci-artifacts.png)
+
+**The screenshot itself**
+
+![Failure screenshot](docs/images/failure-screenshot.png)
+
 ## Project layout
 
 ```
