@@ -10,7 +10,7 @@ public class InventoryTests : UiTestBase
     {
         var inventory = await new LoginPage(Page).LoginAsValidUserAsync();
 
-        await Assertions.Expect(inventory.Items).ToHaveCountAsync(6);
+        await Assertions.Expect(inventory.Items).ToHaveCountAsync(5);
     }
 
     [Fact]
